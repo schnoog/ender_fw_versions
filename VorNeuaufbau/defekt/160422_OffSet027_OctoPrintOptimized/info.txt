@@ -1,0 +1,18 @@
+https://community.octoprint.org/t/a-list-of-recommended-marlin-features/39048
+
+
+Knappes Spiel
+
+Advanced Memory Usage is available via "PlatformIO Home > Project Inspect"
+RAM:   [==========]  96.0% (used 7868 bytes from 8192 bytes)
+Flash: [=======   ]  66.3% (used 168422 bytes from 253952 bytes)
+
+
+
+
+#define BLOCK_BUFFER_SIZE 32
+#define MAX_CMD_SIZE 96
+#define BUFSIZE 16
+
+#define RX_BUFFER_SIZE 1024
+#define TX_BUFFER_SIZE 32

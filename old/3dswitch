@@ -1,0 +1,30 @@
+#!/usr/bin/bash
+
+
+OLDSTATE=$(gpio read 27)
+
+CMD=$1
+DO=0
+
+if [ "$CMD" == "1" ]
+then
+	DO=1
+fi
+
+if [ "$CMD" == "0" ]
+then
+	DO=1
+fi
+
+
+
+
+
+
+if [ "$DO" == "0" ]
+then
+	echo $OLDSTATE
+else
+	echo "Switching $OLDSTATE -> $CMD"
+	gpio write 27 $CMD
+fi
